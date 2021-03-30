@@ -44,8 +44,33 @@ public abstract class curso
 	}
 	public String darPrograma()
 	{
-		return nombre;
+		return programa;
 	}
+	public ArrayList<nota> darNotas()
+	{
+		return notas;
+	}
+	public String darTipoCalificacion()
+	{
+		return tipo_calificacion;
+	}
+	public ArrayList<curso> darCorrequisitos()
+	{
+		return correquisitos;
+	}
+	public ArrayList<prerequisito> darPrerequisitos()
+	{
+		return prerequisitos;
+	}
+	public double darNFinal()
+	{
+		return nota_final;
+	}
+	public String darPeriodo()
+	{
+		return periodo;
+	}	
+	
 	//añadir valores
 	public void AddNota(nota nota) 
 	{
