@@ -8,6 +8,8 @@ public abstract class curso
 	
 	private String nombre;
 	
+	private String codigo;
+	
 	private int creditos;
 	
 	private int duracion;
@@ -31,6 +33,11 @@ public abstract class curso
 	public String darNombre()
 	{
 		return nombre;
+	}
+	
+	public String darCodigo()
+	{
+		return codigo;
 	}
 	
 	public int darCreditos()
