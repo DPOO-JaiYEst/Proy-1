@@ -1,5 +1,8 @@
 package modelo;
 
-public class estudiante {
-
+public class estudiante 
+{
+	private String nombre;
+	
+	
 }
