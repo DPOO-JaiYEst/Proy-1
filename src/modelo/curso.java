@@ -91,4 +91,21 @@ public abstract class curso
 	{
 		correquisitos.add(correquisito);
 	}
+	//constructor
+	public curso(String elNombre, String elCodigo, int losCreditos, String elPrograma, 
+			ArrayList<nota> lasNotas, String elTCal, ArrayList<curso> losCorreq, 
+			ArrayList<prerequisito> losPrereq, double laNota, String elPeriodo)
+	{
+		nombre = elNombre;
+		codigo = elCodigo;
+		creditos = losCreditos;
+		programa = elPrograma;
+		notas = lasNotas;
+		tipo_calificacion = elTCal;
+		correquisitos = losCorreq;
+		prerequisitos = losPrereq;
+		nota_final = laNota;
+		periodo = elPeriodo;
+		
+	}
 }
