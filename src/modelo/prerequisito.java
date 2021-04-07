@@ -22,7 +22,6 @@ public class prerequisito
 	{
 		nombre = elNombre;
 		tipo = elTipo;
-		
 	}
 	
 }
