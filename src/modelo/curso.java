@@ -29,54 +29,97 @@ public abstract class curso
 	private String periodo;
 	
 	//retornar atributos
-	
-	public String darNombre()
+	public String getNombre() 
 	{
 		return nombre;
 	}
-	
-	public String darCodigo()
+	public void setNombre(String nombre) 
+	{
+		this.nombre = nombre;
+	}
+	public String getCodigo() 
 	{
 		return codigo;
 	}
-	
-	public int darCreditos()
+	public void setCodigo(String codigo) 
+	{
+		this.codigo = codigo;
+	}
+	public int getCreditos() 
 	{
 		return creditos;
 	}
-	
-	public int darDuracion()
+	public void setCreditos(int creditos) 
+	{
+		this.creditos = creditos;
+	}
+	public int getDuracion() 
 	{
 		return duracion;
 	}
-	public String darPrograma()
+	public void setDuracion(int duracion) 
+	{
+		this.duracion = duracion;
+	}
+	public String getPrograma() 
 	{
 		return programa;
 	}
-	public ArrayList<nota> darNotas()
+	public void setPrograma(String programa) 
+	{
+		this.programa = programa;
+	}
+	public ArrayList<nota> getNotas() 
 	{
 		return notas;
 	}
-	public String darTipoCalificacion()
+	public void setNotas(ArrayList<nota> notas) 
+	{
+		this.notas = notas;
+	}
+	public String getTipo_calificacion() 
 	{
 		return tipo_calificacion;
 	}
-	public ArrayList<curso> darCorrequisitos()
+	public void setTipo_calificacion(String tipo_calificacion) 
+	{
+		this.tipo_calificacion = tipo_calificacion;
+	}
+	public ArrayList<curso> getCorrequisitos() 
 	{
 		return correquisitos;
 	}
-	public ArrayList<prerequisito> darPrerequisitos()
+	public void setCorrequisitos(ArrayList<curso> correquisitos) 
+	{
+		this.correquisitos = correquisitos;
+	}
+	public ArrayList<prerequisito> getPrerequisitos() 
 	{
 		return prerequisitos;
 	}
-	public double darNFinal()
+	public void setPrerequisitos(ArrayList<prerequisito> prerequisitos) 
+	{
+		this.prerequisitos = prerequisitos;
+	}
+	public double getNota_final() 
 	{
 		return nota_final;
 	}
-	public String darPeriodo()
+	public void setNota_final(double nota_final) 
+	{
+		this.nota_final = nota_final;
+	}
+	public String getPeriodo() 
 	{
 		return periodo;
-	}	
+	}
+	public void setPeriodo(String periodo) 
+	{
+		this.periodo = periodo;
+	}
+
+
+
 	
 	//añadir valores
 	public void AddNota(nota nota) 
@@ -108,4 +151,4 @@ public abstract class curso
 		periodo = elPeriodo;
 		
 	}
-}
+}	
