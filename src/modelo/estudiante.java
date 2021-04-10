@@ -1,5 +1,7 @@
 package modelo;
 
+import java.util.ArrayList;
+
 public class estudiante {
 	private String nombre;
 	private String codigo;
@@ -8,11 +10,9 @@ public class estudiante {
 	private double promedio_acumulado;
 	private String estado_academico;
 	private int creditos_totales;
-	private List<pensum> pensum;
-	private List<semestre> semestres_pasados;
+	private ArrayList<pensum> pensum;
+	private ArrayList<semestre> semestres_pasados;
 	private semestre semestre_actual;
-	
-	
 	public String getNombre() {
 		return nombre;
 	}
@@ -55,16 +55,16 @@ public class estudiante {
 	public void setCreditos_totales(int creditos_totales) {
 		this.creditos_totales = creditos_totales;
 	}
-	public List<pensum> getPensum() {
+	public ArrayList<pensum> getPensum() {
 		return pensum;
 	}
-	public void setPensum(List<pensum> pensum) {
+	public void setPensum(ArrayList<pensum> pensum) {
 		this.pensum = pensum;
 	}
-	public List<semestre> getSemestres_pasados() {
+	public ArrayList<semestre> getSemestres_pasados() {
 		return semestres_pasados;
 	}
-	public void setSemestres_pasados(List<semestre> semestres_pasados) {
+	public void setSemestres_pasados(ArrayList<semestre> semestres_pasados) {
 		this.semestres_pasados = semestres_pasados;
 	}
 	public semestre getSemestre_actual() {
@@ -73,5 +73,8 @@ public class estudiante {
 	public void setSemestre_actual(semestre semestre_actual) {
 		this.semestre_actual = semestre_actual;
 	}
+	
+	
+
 
 }

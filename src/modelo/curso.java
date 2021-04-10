@@ -2,7 +2,7 @@ package modelo;
 
 import java.util.ArrayList;
 
-public class curso 
+public abstract class curso 
 {
 	//atributos
 	
@@ -30,6 +30,7 @@ public class curso
 	
 	private String periodo;
 	
+	private ArrayList<seccion> seccion;
 	//retornar atributos
 	public String getNombre() 
 	{
@@ -126,6 +127,14 @@ public class curso
 	public void setAtributos(ArrayList<String> atributos) 
 	{
 		this.atributos = atributos;
+	}
+	public ArrayList<seccion> getSeccion() 
+	{
+		return seccion;
+	}
+	public void setSeccion(ArrayList<seccion> seccion) 
+	{
+		this.seccion = seccion;
 	}
 
 
