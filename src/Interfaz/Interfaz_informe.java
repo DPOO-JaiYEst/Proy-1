@@ -1,8 +1,8 @@
-package interfaz;
+package Interfaz;
 
 import java.util.Scanner;
 
-public class Interfaz_informeU {
+public class Interfaz_informe {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -12,6 +12,7 @@ public class Interfaz_informeU {
 		
 		String utilizador = usuario.nextLine();
 		System.out.println(utilizador);
+
 
 	}
 
