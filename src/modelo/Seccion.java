@@ -12,7 +12,7 @@ public class Seccion extends Curso
 
 	public Seccion(String elNombre, String elCodigo, int losCreditos, String elPrograma, ArrayList<Nota> lasNotas,
 			String elTCal, ArrayList<Curso> losCorreq, ArrayList<Prerequisito> losPrereq, double laNota,
-			String elPeriodo, String elProfe, String OtroCodigo, Arraylist<> losStudents, String elSalon,
+			String elPeriodo, String elProfe, String OtroCodigo, ArrayList<Estudiante> losStudents, String elSalon,
 			int elNumero) 
 	{
 		super(elNombre, elCodigo, losCreditos, elPrograma, lasNotas, elTCal, losCorreq, losPrereq, 
