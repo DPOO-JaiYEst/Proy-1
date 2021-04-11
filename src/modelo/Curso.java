@@ -2,7 +2,7 @@ package modelo;
 
 import java.util.ArrayList;
 
-public abstract class curso 
+public abstract class Curso 
 {
 	//atributos
 	
@@ -18,19 +18,19 @@ public abstract class curso
 	
 	private ArrayList<String> atributos;
 
-	private ArrayList<nota> notas;
+	private ArrayList<Nota> notas;
 	
 	private String tipo_calificacion;
 	
-	private ArrayList<curso> correquisitos;
+	private ArrayList<Curso> correquisitos;
 	
-	private ArrayList<prerequisito> prerequisitos;
+	private ArrayList<Prerequisito> prerequisitos;
 	
 	private double nota_final;
 	
 	private String periodo;
 	
-	private ArrayList<seccion> seccion;
+	private ArrayList<Seccion> seccion;
 	//retornar atributos
 	public String getNombre() 
 	{
@@ -72,11 +72,11 @@ public abstract class curso
 	{
 		this.programa = programa;
 	}
-	public ArrayList<nota> getNotas() 
+	public ArrayList<Nota> getNotas() 
 	{
 		return notas;
 	}
-	public void setNotas(ArrayList<nota> notas) 
+	public void setNotas(ArrayList<Nota> notas) 
 	{
 		this.notas = notas;
 	}
@@ -88,19 +88,19 @@ public abstract class curso
 	{
 		this.tipo_calificacion = tipo_calificacion;
 	}
-	public ArrayList<curso> getCorrequisitos() 
+	public ArrayList<Curso> getCorrequisitos() 
 	{
 		return correquisitos;
 	}
-	public void setCorrequisitos(ArrayList<curso> correquisitos) 
+	public void setCorrequisitos(ArrayList<Curso> correquisitos) 
 	{
 		this.correquisitos = correquisitos;
 	}
-	public ArrayList<prerequisito> getPrerequisitos() 
+	public ArrayList<Prerequisito> getPrerequisitos() 
 	{
 		return prerequisitos;
 	}
-	public void setPrerequisitos(ArrayList<prerequisito> prerequisitos) 
+	public void setPrerequisitos(ArrayList<Prerequisito> prerequisitos) 
 	{
 		this.prerequisitos = prerequisitos;
 	}
@@ -128,11 +128,11 @@ public abstract class curso
 	{
 		this.atributos = atributos;
 	}
-	public ArrayList<seccion> getSeccion() 
+	public ArrayList<Seccion> getSeccion() 
 	{
 		return seccion;
 	}
-	public void setSeccion(ArrayList<seccion> seccion) 
+	public void setSeccion(ArrayList<Seccion> seccion) 
 	{
 		this.seccion = seccion;
 	}
@@ -140,22 +140,22 @@ public abstract class curso
 
 	
 	//añadir valores
-	public void AddNota(nota nota) 
+	public void AddNota(Nota nota) 
 	{
 		notas.add(nota);
 	}
-	public void AddPrerrequisito(prerequisito prerequisito)
+	public void AddPrerrequisito(Prerequisito prerequisito)
 	{
 		prerequisitos.add(prerequisito);
 	}
-	public void AddCorrequisito(curso correquisito)
+	public void AddCorrequisito(Curso correquisito)
 	{
 		correquisitos.add(correquisito);
 	}
 	//constructor
-	public curso(String elNombre, String elCodigo, int losCreditos, String elPrograma, 
-			ArrayList<nota> lasNotas, String elTCal, ArrayList<curso> losCorreq, 
-			ArrayList<prerequisito> losPrereq, double laNota, String elPeriodo)
+	public Curso(String elNombre, String elCodigo, int losCreditos, String elPrograma, 
+			ArrayList<Nota> lasNotas, String elTCal, ArrayList<Curso> losCorreq, 
+			ArrayList<Prerequisito> losPrereq, double laNota, String elPeriodo)
 	{
 		nombre = elNombre;
 		codigo = elCodigo;

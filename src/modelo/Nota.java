@@ -1,13 +1,13 @@
 package modelo;
 
-public class nota 
+public class Nota 
 {
 	//valores
 	private double valor;
 	
 	private double porcentaje;
 	
-	private curso curso; 
+	private Curso curso; 
 	
 	//retorno valores
 	public double darValorPonderado()
@@ -23,13 +23,13 @@ public class nota
 		return porcentaje;
 	}
 
-	public curso darCurso()
+	public Curso darCurso()
 	{
 		return curso;
 	}
 	//constructor
 	
-	public nota(double elValor, double elPorcentaje, curso elCurso)
+	public Nota(double elValor, double elPorcentaje, Curso elCurso)
 	{
 		valor = elValor;
 		porcentaje = elPorcentaje;

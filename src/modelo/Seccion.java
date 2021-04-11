@@ -2,16 +2,16 @@ package modelo;
 
 import java.util.ArrayList;
 
-public class seccion extends curso
+public class Seccion extends Curso
 {
 	private String profesor;
 	private String codigo_sec;
-	private ArrayList<estudiante> estudiantes;
+	private ArrayList<Estudiante> estudiantes;
 	private String salon;
 	private int numero;
 
-	public seccion(String elNombre, String elCodigo, int losCreditos, String elPrograma, ArrayList<nota> lasNotas,
-			String elTCal, ArrayList<curso> losCorreq, ArrayList<prerequisito> losPrereq, double laNota,
+	public Seccion(String elNombre, String elCodigo, int losCreditos, String elPrograma, ArrayList<Nota> lasNotas,
+			String elTCal, ArrayList<Curso> losCorreq, ArrayList<Prerequisito> losPrereq, double laNota,
 			String elPeriodo, String elProfe, String OtroCodigo, Arraylist<> losStudents, String elSalon,
 			int elNumero) 
 	{
@@ -42,11 +42,11 @@ public class seccion extends curso
 		this.codigo_sec = codigo_sec;
 	}
 
-	public ArrayList<estudiante> getEstudiantes() {
+	public ArrayList<Estudiante> getEstudiantes() {
 		return estudiantes;
 	}
 
-	public void setEstudiantes(ArrayList<estudiante> estudiantes) {
+	public void setEstudiantes(ArrayList<Estudiante> estudiantes) {
 		this.estudiantes = estudiantes;
 	}
 

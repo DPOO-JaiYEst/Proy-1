@@ -3,15 +3,15 @@ package modelo;
 import java.util.ArrayList;
 
 
-public class pensum 
+public class Pensum 
 {
-	private ArrayList<curso> cursos;
+	private ArrayList<Curso> cursos;
 	private String nombre;
 	
-	public ArrayList<curso> getCursos() {
+	public ArrayList<Curso> getCursos() {
 		return cursos;
 	}
-	public void setCursos(ArrayList<curso> cursos) {
+	public void setCursos(ArrayList<Curso> cursos) {
 		this.cursos = cursos;
 	}
 	public String getNombre() {

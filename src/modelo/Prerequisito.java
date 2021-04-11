@@ -1,6 +1,6 @@
 package modelo;
 
-public class prerequisito 
+public class Prerequisito 
 {
 	
 	private String nombre;
@@ -18,7 +18,7 @@ public class prerequisito
 	}
 	
 	//constructor
-	public prerequisito(String elNombre, String elTipo)
+	public Prerequisito(String elNombre, String elTipo)
 	{
 		nombre = elNombre;
 		tipo = elTipo;
