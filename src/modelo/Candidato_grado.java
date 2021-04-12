@@ -66,10 +66,26 @@ public class Candidato_grado
 		System.out.println(d);
 		
 		if ((a1 + b1 + c1 + d1 + e1) == ("1"+"1"+"1"+"1"+"1"))
+		{
 			return true;
+		}
 		else
+		{
 			return false;
+		}
 		
+	}
+	
+	private boolean creditos_vistos (Estudiante elEst)
+	{
+		if (elEst.getCreditos_totales() > 137)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 	}
 	
 	public void cand_grad(Estudiante elEst)
