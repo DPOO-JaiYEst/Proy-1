@@ -35,28 +35,28 @@ public class Candidato_grado
 		{
 			if (sec.getCodigo() == "CBCC-1177")
 				{
-					String a = 	"Se ha visto la materia CBCC-1177";
-					String a1 = "1";
+					a = 	"Se ha visto la materia CBCC-1177";
+					a1 = "1";
 				}
 			if (sec.getCodigo() == "DERE-1300")
 				{
-					String e = 	"Se ha visto la materia DERE-1300";
-					String e1 = "1";
+					e = 	"Se ha visto la materia DERE-1300";
+					e1 = "1";
 				}
 			if (sec.getCodigo() == "LENG-1511" || sec.getCodigo() == "LITE-1621")
 				{
-					String c = 	"Se ha visto Escritura Universitaria 1";
-					String c1 = "1";
+					b = 	"Se ha visto Escritura Universitaria 1";
+					b1 = "1";
 				}
 			if (sec.getCodigo() == "LENG-1512" || sec.getCodigo() == "LITE-1622")
 				{
-					String d = 	"Se ha visto Escritura Universitaria 2";
-					String d1 = "1";
+					c = 	"Se ha visto Escritura Universitaria 2";
+					c1 = "1";
 				}
 			if (sec.getCodigo() == "IDIOMA")
 			{
-				String d = "Se ha visto Requisito de idiomas";
-				String d1 = "1";				
+				d = "Se ha visto Requisito de idiomas";
+				d1 = "1";				
 			}
 		}
 		
