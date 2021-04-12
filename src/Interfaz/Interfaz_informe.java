@@ -18,18 +18,46 @@ public class Interfaz_informe {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Scanner usuario = new Scanner(System.in);
-		System.out.println("Tipo de usuario: ");
 		
-		String utilizador = usuario.nextLine();
-		System.out.println(utilizador);
+		Scanner scan_codigo = new Scanner(System.in);
+		System.out.println("Ingrese su codigo: ");
+		String codigo_estudiante = scan_codigo.nextLine ();
 		
-		String codigo = "20211032";
-		String nombre = "Jaime";
-		String edad = "22";
+		Scanner scan_nombre = new Scanner(System.in);
+		System.out.println("Ingrese su nombre: ");
+		String nombre_estudiante = scan_nombre.nextLine ();
+		
+//		Scanner scan_path_archivo = new Scanner(System.in);
+//		System.out.println("Ingrese la ruta del archivo donde quiere guardar la información: ");
+//		String filetextpath = scan_path_archivo.nextLine ();
+		
+		
+		int lenght;
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Cantidad de materias que ha aprobado: ");
+		lenght = input.nextInt();
+		
+		String[] codes = new String[lenght];
+		
+		for(int counter = 0; counter < lenght; counter++)
+		{
+			System.out.println("Cantidad de materias ingresadas (" + (counter+1) + "), Ingrese el código de las materias que ha aprobado");
+			codes[counter] = input.next();
+		}
+		
+		input.close();
+		
+		System.out.println("Sus materias aprobadas son: ");
+		for(int counter = 0; counter < lenght; counter++)
+		{
+			System.out.println(codes[counter]);
+			
+		}
+		
 		String filetextpath = "C:\\Users\\esteb\\Desktop\\prueba_proyecto1.txt";
 		
-		saveRecord(codigo,nombre,edad,filetextpath);
+		saveRecord(codigo_estudiante,nombre_estudiante,filetextpath);
 		
 		String path = "C:\\Users\\esteb\\Desktop\\Proy-1\\data\\curso.csv";
 		String line = "";
@@ -39,7 +67,7 @@ public class Interfaz_informe {
 			
 			while((line = br.readLine()) !=	null) {
 				String[] values = line.split(",");
-				System.out.println(values[0]);
+				
 			}
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -49,7 +77,7 @@ public class Interfaz_informe {
 				e.printStackTrace();
 		}
 	}
-		public static void saveRecord(String codigo, String nombre, String edad, String filetextpath)
+		public static void saveRecord(String codigo_estudiante, String nombre_estudiante, String filetextpath)
 		{
 			 try
 			 {
@@ -57,7 +85,7 @@ public class Interfaz_informe {
 				 BufferedWriter bw = new BufferedWriter(fw);
 				 PrintWriter pw = new PrintWriter(bw);
 				 
-				 pw.println(codigo + ", " + nombre + ", " + edad + ".");
+				 pw.println("código: " + codigo_estudiante + " nombre: " + nombre_estudiante);
 				 pw.flush();
 				 pw.close();
 				 
