@@ -28,6 +28,8 @@ public class Candidato_grado
 		String c1 = "0";
 		String d = "No se ha visto Requisito de idiomas";
 		String d1 = "0";
+		String e = 	"No se ha visto la materia DERE-1300";
+		String e1 = "0";
 		
 		for (Seccion sec: materias)
 		{
@@ -38,8 +40,8 @@ public class Candidato_grado
 				}
 			if (sec.getCodigo() == "DERE-1300")
 				{
-					String b = 	"Se ha visto la materia DERE-1300";
-					String b1 = "1";
+					String e = 	"Se ha visto la materia DERE-1300";
+					String e1 = "1";
 				}
 			if (sec.getCodigo() == "LENG-1511" || sec.getCodigo() == "LITE-1621")
 				{
@@ -51,6 +53,11 @@ public class Candidato_grado
 					String d = 	"Se ha visto Escritura Universitaria 2";
 					String d1 = "1";
 				}
+			if (sec.getCodigo() == "IDIOMA")
+			{
+				String d = "Se ha visto Requisito de idiomas";
+				String d1 = "1";				
+			}
 		}
 		
 		System.out.println(a);
@@ -58,7 +65,7 @@ public class Candidato_grado
 		System.out.println(c);
 		System.out.println(d);
 		
-		if ((a1 + b1 + c1 + d1) ==("1"+"1"+"1"+"1"))
+		if ((a1 + b1 + c1 + d1 + e1) == ("1"+"1"+"1"+"1"+"1"))
 			return true;
 		else
 			return false;
