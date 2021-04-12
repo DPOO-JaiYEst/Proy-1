@@ -49,6 +49,10 @@ public class Semestre
 	{
 		this.creditos_maximos = creditos_maximos;
 	}
+	public void anadir_curso(Seccion sec)
+	{
+		cursos.add(sec);
+	}
 	
 	public Semestre(String periodo, ArrayList<Seccion> cursos, int creditos_logrados, int creditos_intentados,
 			int creditos_maximos) 
