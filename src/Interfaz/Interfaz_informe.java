@@ -11,8 +11,6 @@ import java.util.Scanner;
 import modelo.Candidato_grado;
 import modelo.Inscribir_clase;
 
-import javax.swing.JOptionPane;
-
 public class Interfaz_informe {
 
 	public static void main(String[] args) {
@@ -26,6 +24,10 @@ public class Interfaz_informe {
 		Scanner scan_nombre = new Scanner(System.in);
 		System.out.println("Ingrese su nombre: ");
 		String nombre_estudiante = scan_nombre.nextLine ();
+		
+		Scanner scan_path_archivo = new Scanner(System.in);
+		System.out.println("Ingrese la ruta del archivo donde quiere guardar la información: ");
+		String filetextpath = scan_path_archivo.nextLine ();
 		
 //		Scanner scan_path_archivo = new Scanner(System.in);
 //		System.out.println("Ingrese la ruta del archivo donde quiere guardar la información: ");
@@ -54,8 +56,6 @@ public class Interfaz_informe {
 			System.out.println(codes[counter]);
 			
 		}
-		
-		String filetextpath = "C:\\Users\\esteb\\Desktop\\prueba_proyecto1.txt";
 		
 		saveRecord(codigo_estudiante,nombre_estudiante,filetextpath);
 		
