@@ -8,6 +8,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Scanner;
+import modelo.Candidato_grado;
+import modelo.Inscribir_clase;
 
 import javax.swing.JOptionPane;
 
